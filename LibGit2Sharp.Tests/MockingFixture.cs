@@ -77,7 +77,7 @@ namespace LibGit2Sharp.Tests
             const string email = "email";
             var now = DateTimeOffset.UtcNow;
 
-            var fakeConfig = new Mock<Configuration>(null, null, null);
+            var fakeConfig = new Mock<Configuration>();
             fakeConfig.Setup(c => c.BuildSignature(now))
                       .Returns<DateTimeOffset>(t => new Signature(name, email, t));
 
