@@ -26,7 +26,7 @@ namespace LibGit2Sharp
         /// <summary>
         /// Default constructor, should only be used for mocking purposes
         /// </summary>
-        public Configuration() : this(null, null, null)
+        public Configuration() : this(null, null, null, null)
         { }
 
         internal Configuration(Repository repository, string globalConfigurationFileLocation,
